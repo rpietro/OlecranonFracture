@@ -2,9 +2,6 @@
 #Olecranon fractures is licensed under a Creative Commons Attribution - Non commercial 3.0 Unported License. You are free: to Share — to copy, distribute and transmit the work to Remix — to adapt the work, under the following conditions: Attribution — You must attribute the work in the manner specified by the author or licensor (but not in any way that suggests that they endorse you or your use of the work). Noncommercial — You may not use this work for commercial purposes. With the understanding that: Waiver — Any of the above conditions can be waived if you get permission from the copyright holder. Public Domain — Where the work or any of its elements is in the public domain under applicable law, that status is in no way affected by the license. Other Rights — In no way are any of the following rights affected by the license: Your fair dealing or fair use rights, or other applicable copyright exceptions and limitations; The author's moral rights; Rights other persons may have either in the work itself or in how the work is used, such as publicity or privacy rights. Notice — For any reuse or distribution, you must make clear to others the license terms of this work. The best way to do this is with a link to this web page. For more details see http://creativecommons.org/licenses/by-nc/3.0/
 #######################################################################################
 
-#TODO: check git book on http://goo.gl/j2Oxt
-#TODO: investigate connection with figshare http://goo.gl/QXlpr
-#TODO: format as knitr http://goo.gl/3UVAZ - bibliographic references will be dealt with as citations. need to check whether can add hyperlinks to the original publications
 #TODO: gists http://goo.gl/pYs6m
 #TODO for toolbox: rrdf, mysql, hadoop, toolbox input and output for clinicians (might have ontology down the line)
 
@@ -19,7 +16,6 @@ detach()
 lapply(c("ggplot2", "psych", "RCurl", "irr"), library, character.only=T)
 
 
-#Ana, please check this document: irr package documentation - http://goo.gl/5AiuS
 
 #below is an example of how the data should be formatted -------------------------------
 
@@ -32,9 +28,9 @@ video
 options(RCurlOptions = list(capath = system.file("CurlSSL", "cacert.pem", package = "RCurl"), ssl.verifypeer = FALSE))
 #see http://goo.gl/mQwxO on how to get this link
 #link below won't work until data is entered in the right format
-# olecranon.data <- getURL("https://docs.google.com/spreadsheet/pub?key=0ArVW3PoO2euydHVHcVU2S3BROWRYM29OYWhNTGlMUVE&single=true&gid=0&output=csv")
-# read.csv(textConnection(olecranon.data))
-# names(olecranon.data)
+olecranon.data <- getURL("https://docs.google.com/spreadsheet/pub?key=0ArVW3PoO2euydHVHcVU2S3BROWRYM29OYWhNTGlMUVE&single=true&gid=0&output=csv")
+read.csv(textConnection(olecranon.data))
+names(olecranon.data)
 
 #checking data set as a whole
 # attach(olecranon.data)
