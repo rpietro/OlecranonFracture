@@ -4,7 +4,7 @@
 
 #TODO: gists http://goo.gl/pYs6m
 #TODO for toolbox: rrdf, mysql, hadoop, toolbox input and output for clinicians (might have ontology down the line)
-
+  
 #setting environment -------------------------------------------------------------------
 #remove all objects and then check
 rm(list = ls())
@@ -14,14 +14,6 @@ detach()
 
 #TODO create mlibrary function to upload many packages and post as gist
 lapply(c("ggplot2", "psych", "RCurl", "irr"), library, character.only=T)
-
-
-
-#below is an example of how the data should be formatted -------------------------------
-
-video
-
-#Ana, please format data to make sure it reads like data set above. since you have different raters, levels of expertise (specialist, non-specialist),  time (day 1, day 30), and classification (AO, colton, etc), your columns or variables would look like this: rater1SpDay1AO, rater3NspDay30Colton, ... the code for rating
 
 #uploading data ------------------------------------------------------------------------
 #TODO create package for gsheethttps
@@ -38,13 +30,10 @@ names(olecranon.data)
 # head(olecranon.data)
 
 #TODO -- when putting together each analysis toolbox, add bibliographic references from the R packages in the section about annotated references
-#below is example to understand how data should be formatted, just replace video by your data set once it is properly formatted, see below for instructions
-data(video)
-agree(video) # Simple percentage agreement
-agree(video, 1) # Extended percentage agreement
 
 #notice below that each of the ratings has to be an integer:
 str(video)
+agree(video)
 
 #additional analyses -- 
 data(vision)
