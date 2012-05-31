@@ -65,3 +65,16 @@ data(diagnoses)
 kappam.fleiss(diagnoses) #Computes Fleiss’ Kappa as an index of interrater agreement between m raters on categorical data. Conger, A.J. (1980). Integration and generalisation of Kappas for multiple raters. Psychological Bulletin, 88, 322-328. Fleiss, J.L. (1971). Measuring nominal scale agreement among many raters. Psychological Bul- letin, 76, 378-382. Fleiss, J.L., Levin, B., & Paik, M.C. (2003). Statistical Methods for Rates and Proportions, 3rd Edition. New York: John Wiley & Sons.
 
 #Joao, what are you using to generate Bland-Altman plots?
+
+bland_altman_plot <- function(x,y,xlab="Average testresult", ylab="Deviation of experimental test")
+  {
+ x <- #var1, Ana here you should place the first observation
+ y <- #var1, Ana here you should place the second observation
+ d <- ((X + y)/2)
+ diff <- x - y         
+
+ plot(diff ~ d,pch=16,ylim=c(-6,6),xlab=xlab,ylab=ylab)
+ abline(h=mean(diff)-c(-1,0,1)*sd(diff),lty=2)
+}
+bland_altman_plot(d,diff,xlab="Avarage #Name of the variables",ylab="Difference Before and After #Name of the variable")
+
