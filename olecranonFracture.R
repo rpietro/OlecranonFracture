@@ -17,7 +17,7 @@ lapply(c("ggplot2", "psych", "RCurl", "irr"), library, character.only=T)
 options(RCurlOptions = list(capath = system.file("CurlSSL", "cacert.pem", package = "RCurl"), ssl.verifypeer = FALSE))
 #see http://goo.gl/mQwxO on how to get this link
 #link below won't work until data is entered in the right format
-olecranon.data <- getURL("https://docs.google.com/spreadsheet/pub?key=0ArVW3PoO2euydHVHcVU2S3BROWRYM29OYWhNTGlMUVE&single=true&gid=0&output=csv")
+olecranon.data <- getURL("https://docs.google.com/spreadsheet/pub?key=0ArVW3PoO2euydHVHcVU2S3BROWRYM29OYWhNTGlMUVE&output=csv")
 read.csv(textConnection(olecranon.data))
 names(olecranon.data)
 
