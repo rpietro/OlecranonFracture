@@ -1,6 +1,6 @@
-# **Reviewers' comments:**
+## **Reviewers' comments:**
 
-## Reviewer #2: This research studied the stability and reliability of four different classification of olecranon fracture by comparing the kappa coefficient of inter- and intra-observer. I read this paper with great interest, but think that the manuscript **has great flaw for publication of CORR**. 
+### Reviewer #2: This research studied the stability and reliability of four different classification of olecranon fracture by comparing the kappa coefficient of inter- and intra-observer. I read this paper with great interest, but think that the manuscript **has great flaw for publication of CORR**. 
 
 The study protocol was consisted of eight surgeons and 18 fractures. 
 1.Firstly, I would like to know how they decided the numbers of participating surgeons and fractures. 
@@ -13,7 +13,7 @@ Thirdly, the author should mention about the relationship between the classifica
 **R: A relação entre as classificações e os resultados finais foram discutidos.**
 
 
-## Reviewer #3: This is an original paper comparing the classification systems used in the literature. It has not been done before to my knowledge and therefore will add to the present literature. I like the inter and intraobserver reliability. This adds validity to the study. 
+### Reviewer #3: This is an original paper comparing the classification systems used in the literature. It has not been done before to my knowledge and therefore will add to the present literature. I like the inter and intraobserver reliability. This adds validity to the study. 
 
 1.Abstract: Under the purpose, I would include any hypothesis you may have had going in to the paper. Did you think one classification system would fare better than the others and for what reason?
 **R:Our hypothesis is that Colton Classification presents an acceptable agreement since it is simpler to use, on the other hand considering AO Classification´s complexity we expect it to reach a lower level of agreement.**
